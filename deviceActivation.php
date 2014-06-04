@@ -1,5 +1,5 @@
 <?php
-$ainfo = base64_decode($_POST['activation-info-base64']);
+$ainfo = base64_decode($_POST['activation-info']);
 $xml = new SimpleXMLElement($ainfo);
 $data = base64_decode((string)$xml->data);
 $xml = new SimpleXMLElement($data);
